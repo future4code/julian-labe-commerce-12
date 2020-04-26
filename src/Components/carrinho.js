@@ -7,18 +7,20 @@ const CarrinhoContainer = styled.nav`
   margin-left: 10px;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
+`;
+
+const Lista = styled.ul`
+  list-style-type: circle;
+  align-self: flex-start;
 `;
 
 class Carrinho extends React.Component {
   render() {
     return (
       <CarrinhoContainer>
-        <h2>Carrinho</h2>
-        <label>Compras</label>
-        <ul>
-          <li></li>
-        </ul>
+        <h1>Carrinho</h1>
+        <Lista />
       </CarrinhoContainer>
     );
   }
